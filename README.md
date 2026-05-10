@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="icon.ico" alt="RTSS Python Crosshair" width="128" height="128">
+  <img src="icon.png" alt="RTSS Python Crosshair" width="128" height="128">
 </p>
 
 # RTSS Python Crosshair

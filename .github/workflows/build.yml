@@ -27,6 +27,7 @@ jobs:
           pyinstaller `
             --onefile `
             --windowed `
+            --icon=icon.ico `
             --name RTSS_Crosshair `
             rtss_crosshair.py
 
