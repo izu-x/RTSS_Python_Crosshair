@@ -1,18 +1,27 @@
+<p align="center">
+  <img src="icon.ico" alt="RTSS Python Crosshair" width="128" height="128">
+</p>
+
 # RTSS Python Crosshair
 
-Crosshair overlay for RivaTuner Statistics Server, written in Python.
+[![Python](https://img.shields.io/badge/python-3.x-blue?logo=python)](https://www.python.org/)
+[![Platform](https://img.shields.io/badge/platform-Windows-blue?logo=windows)](https://www.microsoft.com/windows)
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Support-yellow?logo=buymeacoffee)](https://buymeacoffee.com/izu_x)
+
+Crosshair overlay for [RivaTuner Statistics Server](https://www.guru3d.com/files-details/rtss-rivatuner-statistics-server-download.html), written in Python.
 
 **Zero dependencies** — no compiler, no Visual Studio, no external packages. Just Python 3.
+
+## Requirements
+
+- Windows with RTSS running
+- Python 3.x (any version with tkinter)
 
 ## Usage
 
 ```powershell
 python rtss_crosshair.py
 ```
-
-Requires:
-- Windows with [RivaTuner Statistics Server](https://www.guru3d.com/files-details/rtss-rivatuner-statistics-server-download.html) running
-- Python 3.x (any version with tkinter)
 
 ## Controls
 

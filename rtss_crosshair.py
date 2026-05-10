@@ -489,6 +489,10 @@ def build_gui():
     root.title("RTSS Crosshair")
     root.resizable(False, False)
     root.configure(padx=8, pady=8, bg=BG)
+    try:
+        root.iconbitmap("icon.ico")
+    except tk.TclError:
+        pass
 
     # ttk dark style for Combobox
     style = ttk.Style(root)
@@ -497,16 +501,24 @@ def build_gui():
     style.map("TCombobox", fieldbackground=[("readonly", BG_ENTRY)])
 
     def dark_label(parent, text, **kw):
-        return tk.Label(parent, text=text, bg=BG, fg=FG, **kw)
+        kw.setdefault('bg', BG)
+        kw.setdefault('fg', FG)
+        return tk.Label(parent, text=text, **kw)
 
     def dark_button(parent, text, command, **kw):
-        return tk.Button(parent, text=text, command=command, bg=BG_BTN, fg=FG,
-                         activebackground=BG_BTN_ACTIVE, activeforeground=FG,
-                         relief="flat", **kw)
+        kw.setdefault('bg', BG_BTN)
+        kw.setdefault('fg', FG)
+        kw.setdefault('activebackground', BG_BTN_ACTIVE)
+        kw.setdefault('activeforeground', FG)
+        kw.setdefault('relief', 'flat')
+        return tk.Button(parent, text=text, command=command, **kw)
 
     def dark_entry(parent, textvariable, **kw):
-        return tk.Entry(parent, textvariable=textvariable, bg=BG_ENTRY, fg=FG,
-                        insertbackground=FG, relief="flat", **kw)
+        kw.setdefault('bg', BG_ENTRY)
+        kw.setdefault('fg', FG)
+        kw.setdefault('insertbackground', FG)
+        kw.setdefault('relief', 'flat')
+        return tk.Entry(parent, textvariable=textvariable, **kw)
 
     def dark_check(parent, text, variable, command):
         return tk.Checkbutton(parent, text=text, variable=variable, command=command,
