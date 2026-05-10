@@ -60,4 +60,4 @@ The crosshair font is controlled by RTSS itself. To change it:
 2. Navigate to the **Raster 3D** tab
 3. Click the **Raster3D font** button to pick any installed font
 
-<img src="rtss_raster3d_font.png" alt="RTSS Raster 3D font settings" width="500">
+<img src="rtss_raster3d_font.png" alt="RTSS Raster 3D font settings" width="300">
