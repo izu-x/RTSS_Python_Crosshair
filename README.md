@@ -51,3 +51,11 @@ Type any character in the text field and click **Apply** to change the crosshair
 ### Persistence
 
 Click **Save** (or RCtrl + Num.) to store current position, size, and symbol to the Windows registry. Settings are auto-loaded on next launch.
+
+### Font
+
+The crosshair font is controlled by RTSS itself. To change it:
+
+1. Open RTSS → right-click the tray icon → **Setup**
+2. Navigate to the **Raster 3D** tab
+3. Click the **Raster3D font** button to pick any installed font
