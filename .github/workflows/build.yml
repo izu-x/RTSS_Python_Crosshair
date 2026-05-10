@@ -28,14 +28,14 @@ jobs:
             --onefile `
             --windowed `
             --icon=icon.ico `
-            --name RTSS_Crosshair `
+            --name RTSS_Python_Crosshair `
             rtss_crosshair.py
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: RTSS_Crosshair.exe
-          path: dist/RTSS_Crosshair.exe
+          name: RTSS_Python_Crosshair.exe
+          path: dist/RTSS_Python_Crosshair.exe
 
   release:
     if: startsWith(github.ref, 'refs/tags/v')
@@ -47,11 +47,11 @@ jobs:
       - name: Download artifact
         uses: actions/download-artifact@v4
         with:
-          name: RTSS_Crosshair.exe
+          name: RTSS_Python_Crosshair.exe
           path: dist/
 
       - name: Create Release
         uses: softprops/action-gh-release@v2
         with:
-          files: dist/RTSS_Crosshair.exe
+          files: dist/RTSS_Python_Crosshair.exe
           generate_release_notes: true
