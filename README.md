@@ -11,6 +11,8 @@
 
 Crosshair overlay for [RivaTuner Statistics Server](https://www.guru3d.com/files-details/rtss-rivatuner-statistics-server-download.html), written in Python.
 
+> **GSync compatible** — unlike most crosshair overlays that break variable refresh rate, this one works through RTSS's native OSD layer, keeping GSync fully functional.
+
 **Zero dependencies** — no compiler, no Visual Studio, no external packages. Just Python 3.
 
 ## Requirements
